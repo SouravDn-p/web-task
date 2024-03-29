@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    /* font-family: Arial, sans-serif; */
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color:#333;
+    z-index: 2;
+    /* overflow: hidden; */
+    color: white;
+}
+.logo{
+    padding: 14px 16px;
+    float: left;
+}
+.ops{
+    float: right;
+    display: flex;
+}
+#navbar .ops ul{
+    list-style: none;
+    float: left;
+    display: flex;
+}
+#navbar .ops a{
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    float: left;
+    padding:10px 10px;
+    color: white;
+    padding-top: 15px;
+} 
+
+#navbar .ops a:hover{
+    background-color: #ddd;
+    color: rgb(0, 0, 0);
+    height: 67%;
+} 
+
+#home{
+    background-color: #ddd;
+    width: 94%;
+    height: 600px;
+    margin:6% 3% 0 3%;
+    background-image: url(biography-bg.png);
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.left{
+    width: 50%;
+}
+
+#home .left img{
+    width: 60%;
+    border-radius: 100%;
+    padding: 10% 0 0 30%;
+}
+#home .right{
+    width: 50%;
+    text-align: center;
+    height: 100%;
+    margin-top: 10%;
+}
+#home .right h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 20%;
+}
+#home .right p , .about-box p{
+    padding-top: 2%;
+    text-align: center;
+    padding-right: 5%;
+    text-transform: capitalize;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+
+.SalmonLight{
+    color: salmon;
+}
+.SalmonLight:hover{
+    color: rgb(238, 97, 16);
+}
+
+.btn{
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: salmon;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+#about{
+    height: 600px;
+    margin:0 3% 0 3%;
+    width: 94%;
+    background-color: #f1f0f0;
+    display: flex;
+}
+
+.half{
+    width: 50%;
+}
+
+.half h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 10%;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.blogs{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 2%;
+    text-align: center;
+    justify-content: center;
+}
+
+.blogItem{
+    width: 40%;
+    height: 150px;
+    margin: 3% 2%;
+    border: 1px solid slateblue;
+    border-radius:10px ;
+    background-color: #ddd;
+    display: grid;
+    place-items: center;
+}
+
+.about-box{
+    margin: 5%;
+    display: grid;
+    place-items: center;
+}
+.forms{
+    margin-top: 50px;
+    padding-left: 5%;
+}
+
+input,textarea{
+    padding-left: 22px;
+    width: 40%;
+    height: 30px;
+    border-radius: 8px;
+    background-color: salmon;
+    outline: salmon;
+    color: white;
+    margin:0 0 5px 5px;
+    font-size: 15px;
+}
+input::placeholder,textarea::placeholder{
+    color: white;
+    background-color: salmon;
+}
+textarea{
+    height: 100px;
+    width: 85%;
+    font-size: 18px;
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+h1::after {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    transform: translateX(-50%);
+    background-color:blueviolet;
+    left: 26%;
+    bottom: -120px; /* Adjust the distance from the bottom as needed */
+}
+.under::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    transform: translateX(-50%);
+    background-color:blueviolet;
+    left: 74%;
+    bottom: -120px; /* Adjust the distance from the bottom as needed */
+}
+
+.underline::after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    transform:translate(-70%);
+    background-color: #a52c2c;
+    margin: 12px;
+    height: 4px;
+    bottom: -320px;
+    left: 75%;
+}
+
+.touch{
+    height: 500px;
+}
+.touch h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5%;
+}
+.touch-box{
+    width: 350px;
+    height: 60px;
+    display: flex;
+    text-align: left;
+    padding-bottom: 20px;
+}
+.left3{
+    width: 20%;
+}
+.left7{
+    width: 80%;
+}
+.touch-box i{
+    color: salmon;
+    font-size: 50px;
+}
+
+
+footer{
+    height: 150px;
+    background-color: #333;
+    background-image: url(biography-bg.png);
+    background-repeat: no-repeat;
+    display: grid;
+    text-align: center;
+}
+footer i{
+    padding-left: 12px;
+    color:#333;
+}
+.icons{
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    #navbar{
+        height: 140px;
+        overflow: scroll;
+    }
+    #navbar .ops{
+        display: inline-block;
+    }
+    #navbar .ops ul,#navbar .ops ul a{
+        display: block;
+        float: left;
+        padding-right: 10px;
+        padding-top: 15px;
+        font-size: 18px;
+    }
+    #home{
+        padding-top: 120px;
+        height: 300px;
+    }
+    #home .right{
+        width: 50%;
+        text-align: center;
+        height: 100%;
+        margin-top: 10%;
+    }
+    #home .right h1 {
+        font-size: 15px;
+        text-transform: uppercase;
+        text-align: right;
+        padding-right: 20%;
+    }
+    
+    #home .right p,.about-box p{
+        padding-top: 2%;
+        text-align: center;
+        padding-right: 5%;
+        text-transform: capitalize;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .btn{
+        padding: 6px 10px;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    #about{
+        height: 400px;
+    }
+    .blogItem{
+        height: 100px;
+    }
+    .blogItem h2{
+        font-size: 12px;
+    }
+    .half h1,.touch h1 {
+        font-size: 20px;
+    }
+    .forms{
+        margin-top: 20px;
+        padding-left: 5%;
+    }
+    
+    input,textarea{
+        padding-left: 12px;
+        width: 40%;
+        height: 20px;
+        border-radius: 5px;
+        margin:0 0 5px 5px;
+        font-size: 10px;
+    }
+    input::placeholder,textarea::placeholder{
+        color: white;
+        background-color: salmon;
+    }
+    textarea{
+        height: 100px;
+        width: 85%;
+        font-size: 20px;
+        font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .under::after,.underline::after,h1::after {        
+        width: 0px;
+    }
+    .left3{
+        width: 15%;
+    }
+    .left7{
+        width:85%;
+    }
+    .touch-box i{
+        color: salmon;
+        font-size: 30px;
+    }
+    .touch-box h3{
+        color: #333;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    footer{
+        height: 150px;
+    }
+    footer i , footer h3{
+        font-size: 12px;
+    }
+    .icons{
+        padding-top: 20px;
+    }
+
+}
