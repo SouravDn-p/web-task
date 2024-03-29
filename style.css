@@ -213,7 +213,7 @@ h1::after {
 }
 
 .touch{
-    height: 500px;
+    height: 450px;
 }
 .touch h1{
     font-size: 40px;
@@ -226,7 +226,7 @@ h1::after {
     height: 60px;
     display: flex;
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 .left3{
     width: 20%;
@@ -323,8 +323,10 @@ footer i{
         margin-top: 20px;
         padding-left: 5%;
     }
-    
-    input,textarea{
+    .touch{
+        height: 250px;
+    }
+    input{
         padding-left: 12px;
         width: 40%;
         height: 20px;
@@ -332,14 +334,17 @@ footer i{
         margin:0 0 5px 5px;
         font-size: 10px;
     }
+    .t input{
+        width: 85%;
+    }
     input::placeholder,textarea::placeholder{
         color: white;
         background-color: salmon;
     }
     textarea{
-        height: 100px;
-        width: 85%;
-        font-size: 20px;
+        height: 50px;
+        width: 80%;
+        font-size: 10px;
         font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .under::after,.underline::after,h1::after {        
@@ -351,20 +356,25 @@ footer i{
     .left7{
         width:85%;
     }
+    .touch-box{
+        padding-bottom: 0px;
+    }
     .touch-box i{
+        width: 5%;
         color: salmon;
         font-size: 30px;
+        float:right;
     }
     .touch-box h3{
-        color: #333;
-        font-size: 15px;
-        line-height: 20px;
+        padding-left: 15%;
+        font-size: 12px;
+        float: left;
     }
     footer{
-        height: 150px;
+        height: 100px;
     }
     footer i , footer h3{
-        font-size: 12px;
+        font-size: 10px;
     }
     .icons{
         padding-top: 20px;
