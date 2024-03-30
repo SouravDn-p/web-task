@@ -37,7 +37,7 @@
         <div id="about">
                 <div class="half">
                     <h1 id="blog" class="SalmonLight">Blogs</h1>
-                    <div class="blogs"  style="margin-top: 10%;">
+                    <div class="blogs"  style="margin-top: 4%;">
                         <div class="blogItem">
                             <h2>BlogItem 1</h2>
                         </div>
@@ -52,21 +52,26 @@
                 <div class="half">
                     <h1 class="SalmonLight under">About Me</h1>
                     <div class="about-box">
-                        <p>Hello! I'm Sourav Debnath, a passionate and driven student currently pursuing Computer Science and Engineering .</p>
+                        <p style="padding-top: 25px;"> Hello! I'm Sourav Debnath, a passionate and driven student currently pursuing Computer Science and Engineering .</p>
                     </div>
                     <div><h1 class="SalmonLight underline" style="padding-top: 0;">CONTACT ME</h1></div>
                     <div class="forms">
-                        <form action="" method="post">
+                        <form action="/" method="post" onsubmit="window.location.href='/index.html'; return false;">
                             <div class="t">
-                                <input type="text" name="name" id="name" placeholder="YOUR NAME">
+                                <input type="text" name="name" id="name" placeholder="YOUR NAME" required>
                                 <input type="text" name="subject" id="subject" placeholder="YOUR SUBJECT">
                            </div>
-                           <div> <input style="padding:0 24%;" type="email" name="email" id="email" placeholder="YOUR MAIL"></div>
+                           <div> <input style="padding:0 24%;" type="email" name="email" id="email" placeholder="YOUR MAIL" required></div>
                            <div>
-                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
                            </div>
-                        </form>
-                        <button type="submit" class="btn" style="margin-left: 38%;">Submit</button>
+                        
+                           <button type="submit" class="btn" style="margin-left: 38%;" >
+                            Submit
+                        </button>
+                        
+                    </form>
+                        
                     </div>    
                 </div>
         </div>
@@ -95,7 +100,6 @@
             </div>
             <div><h3>© 2024 Sourav Debnath. All rights reserved.</h3></div>
         </footer>
-        
           
     <script src="https://kit.fontawesome.com/113a085664.js" crossorigin="anonymous"></script>   
 </body>
