@@ -29,3 +29,13 @@ section{
     padding-top: 100px;
 }
 
+@media screen and (max-width:800px) {
+    .my-project img{
+        width: 150px;
+        height: 100px;
+    }
+    .footdiv{
+        margin-left: 0;
+    }
+}
+
