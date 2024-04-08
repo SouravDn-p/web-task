@@ -238,6 +238,7 @@ footer{
     background-repeat: no-repeat;
     display: grid;
     text-align: center;
+    margin-top: 20px;
 }
 footer i{
     padding-left: 12px;
@@ -310,6 +311,8 @@ footer i{
     .touch{
         height: 250px;
     }
+    
+    
     input{
         padding-left: 12px;
         width: 40%;
@@ -350,7 +353,7 @@ footer i{
         font-size: 30px;
         float:right;
     }
-    .touch-box h3{
+    .touch-box h4{
         padding-left: 15%;
         font-size: 12px;
         float: left;
@@ -358,12 +361,16 @@ footer i{
     footer{
         height: 100px;
     }
-    footer i , footer h3{
+    footer i , footer h5{
         font-size: 10px;
+    }
+    .touch h5{
+        font-size: 15px;
     }
     .my-icons{
         padding-top: 20px;
     }
+    
 
 }
 
@@ -400,11 +407,6 @@ footer i{
         font-size: 15px;
         line-height: 20px;
     }
-    /* .my-btn{
-        padding: 6px 10px;
-        text-decoration: none;
-        font-size: 10px;
-    } */
     #about{
         height: 500px;
     }
@@ -482,6 +484,7 @@ footer i{
     #home .left img{
         width: 88%;
     }
+    
 
     h1::after {
         bottom: -220px; 
@@ -491,7 +494,7 @@ footer i{
     }
     
     .underline::after{
-        bottom: -0px;
+        bottom: -500px;
         left: 75%;
     }
 }
@@ -516,4 +519,5 @@ footer i{
         bottom: -440px;
         left: 75%;
     }
+    
 }
