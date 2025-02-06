@@ -3,7 +3,7 @@
 A sleek and responsive **portfolio** showcasing **projects, skills, and contact details**. Designed for a **clean user experience** with smooth animations.  
 
 ## 🔗 Live Project  
-[View Here](https://your-live-link.com)  
+[View Here](https://souravdn-p.github.io/web-task/)  
 
 ## 🛠 Technologies  
 - **HTML5** – Structuring the content  
