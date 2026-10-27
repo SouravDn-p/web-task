@@ -4,41 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sourav Debnath</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
         <header>
-            <nav class="navbar navbar-expand-lg  bg-body-tertiary">
-                <div class="container-fluid">
-                  <a class="navbar-brand" style="font-weight: 600;" href="#">Sourav </a>
+            <nav class="navbar navbar-expand-lg site-nav sticky-top" aria-label="Primary">
+                <div class="container-fluid nav-shell">
+                  <a class="navbar-brand" href="#home">
+                    <img class="brand-mark" src="sourav.jpg" alt="">
+                    Sourav Debnath
+                  </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                        <a class="nav-link" href="#about">About</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#blog">Blog</a>
+                        <a class="nav-link" href="#blog">Blog</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#project">Projects</a>
+                        <a class="nav-link" href="#project">Projects</a>
                       </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2"  type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn my-btn-outline-success" type="submit">Search</button>
-                    </form>
+                    <a class="nav-cta" href="#contact">Get in touch</a>
                   </div>
                 </div>
               </nav>
@@ -46,67 +45,72 @@
 
         <div id="home">
             <div class="left">
-                <img src="sourav.jpg" alt="sourav_photo">
+                <img src="sourav.jpg" alt="Portrait of Sourav Debnath">
             </div>
             <div class="my-right">
-                <h1 class="SalmonLight">I'M Sourav Debnath</h1>
-                <h1>STUDENT OF CSE</h1>
-                <p>Hello! I'm Sourav Debnath, a passionate and driven student currently pursuing Computer Science and Engineering In Green University of bangladesh , ID 221902246</p>
-                <a href="#about" class="my-btn" type="button">More About Me</a>
-            </div> 
+                <h1 class="SalmonLight">I'm Sourav Debnath</h1>
+                <h1>Student of CSE</h1>
+                <p>Hello! I'm Sourav Debnath, a passionate and driven student currently pursuing Computer Science and Engineering at Green University of Bangladesh.</p>
+                <a href="#about" class="my-btn">More About Me</a>
+            </div>
         </div>
 
         <div id="about">
                 <div class="half">
                     <h1 id="blog" class="SalmonLight">Blogs</h1>
-                    <div class="blogs"  style="margin-top: 4%;">
-                        <div class="blogItem">
-                            <h2>BlogItem 1</h2>
-                        </div>
-                        <div class="blogItem">
-                            <h2>BlogItem 2</h2>
-                        </div>
-                        <div class="blogItem">
-                            <h2>BlogItem 3</h2>
-                        </div>
+                    <div class="blogs">
+                        <article class="blogItem">
+                            <h2>React interfaces</h2>
+                            <p>How I keep a screen simple before adding features.</p>
+                        </article>
+                        <article class="blogItem">
+                            <h2>Real-time apps</h2>
+                            <p>Notes from building live updates people can trust.</p>
+                        </article>
+                        <article class="blogItem">
+                            <h2>Full-stack practice</h2>
+                            <p>What I learn by shipping the API with the page.</p>
+                        </article>
                     </div>
                 </div>
                 <div id="contact" class="half">
                     <h1 class="SalmonLight under">About Me</h1>
                     <div class="about-box">
-                        <p style="padding-top: 25px;"> Hello! I'm Sourav Debnath, a passionate and driven student currently pursuing Computer Science and Engineering .</p>
+                        <p>I study Computer Science and Engineering at Green University of Bangladesh, and I spend most of my time building websites and the services behind them.</p>
                     </div>
-                    <div><h1 class="SalmonLight underline" style="padding-top: 0;">CONTACT ME</h1></div>
+                    <div><h1 class="SalmonLight underline">Contact Me</h1></div>
                     <div class="forms">
-                        <form action="https://souravdn-p.github.io/web-task/" method="" >
+                        <form id="contact-form">
                             <div class="t">
-                                <input type="text" name="name" id="name" placeholder="YOUR NAME" required>
-                                <input type="text" name="subject" id="subject" placeholder="YOUR SUBJECT">
+                                <input type="text" name="name" id="name" placeholder="Your name" autocomplete="name" required>
+                                <input type="text" name="subject" id="subject" placeholder="Subject">
                            </div>
-                           <div> <input style="padding:0 24%;" type="email" name="email" id="email" placeholder="YOUR MAIL" required></div>
+                           <div><input type="email" name="email" id="email" placeholder="Your email" autocomplete="email" required></div>
                            <div>
-                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                                <textarea name="message" id="message" rows="5" placeholder="Your message" required></textarea>
                            </div>
-                           
-                            <button type="submit" class="my-btn" style="margin-left: 38%;">
-                               Submit
-                            </button>                        
-                    </form>
-                        
+                            <button type="submit" class="my-btn">Submit</button>
+                            <p class="form-status" id="form-status" role="status"></p>
+                        </form>
                     </div>    
                 </div>
         </div>
 
-        <section class="my-project" id="project" style="text-align: center;">
-            <h2 class=" SalmonLight">My Lettest Projects</h2>
-            <div class="footdiv" style="margin-left: 15%;">
-                <img src="image.png" alt="" >
-            </div>
-            <div class="footdiv">
-                <img src="work-2.jpg" alt="">
-            </div>
-            <div class="footdiv">
-                <img src="work-3.jpg" alt="">
+        <section class="my-project" id="project">
+            <h2 class="SalmonLight">My Latest Projects</h2>
+            <div class="project-row">
+                <figure class="footdiv">
+                    <img src="image.png" alt="Homepage layout of this portfolio">
+                    <figcaption>Portfolio site</figcaption>
+                </figure>
+                <figure class="footdiv">
+                    <img src="work-2.jpg" alt="Bicycle store homepage concept">
+                    <figcaption>Storefront layout</figcaption>
+                </figure>
+                <figure class="footdiv">
+                    <img src="work-3.jpg" alt="Learning app landing page concept">
+                    <figcaption>Learning app layout</figcaption>
+                </figure>
             </div>
         </section>
 
@@ -114,31 +118,82 @@
             <div >
                 <h1 class="SalmonLight">Get In Touch</h1>
             </div>
-            <div class="about-box" style="text-align: center; padding-top: 0px;">
-                <p >Feel free to reach out to me with any inquiries or collaboration opportunities.</p>
+            <div class="about-box">
+                <p>Feel free to reach out with a question or a project you want to build together.</p>
                 <div class="touch-box">
-                    <div class="left3"><i class="fa-solid fa-envelope"></i></div>
-                    <div class="left7" style="padding-left: 50px;"><h5>MAIL ME <br> sdsouravdebnath26@gmail.com</h5></div>
+                    <div class="left3"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+                    <div class="left7"><h5>Mail me<br><a href="mailto:sdsouravdebnath26@gmail.com">sdsouravdebnath26@gmail.com</a></h5></div>
                 </div>
                 <div class="touch-box">
-                    <div class="left3"><i class="fa-solid fa-phone"></i></div>
-                    <div class="left7" style="padding-left: 50px;"><h5>CALL ME <br> +8801903-038653</h5></div>
+                    <div class="left3"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+                    <div class="left7"><h5>Call me<br><a href="tel:+8801903038653">+880 1903-038653</a></h5></div>
                 </div>
             </div>
         </div>
         
         <footer>
             <div class="my-icons">
-                <a href="https://www.facebook.com/Sourav.Debnath.246"><i class="fa-brands fa-2x fa-facebook"></i></a>
-                <a href="https://twitter.com/Sourav21debnath"><i class="fa-brands fa-2x fa-x-twitter"></i></a>
-                <a href="https://github.com/SouravDn-p"><i class="fa-brands fa-2x fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/sourav-debnath-5b43902b7/"><i class="fa-brands fa-2x fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/Sourav.Debnath.246" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-2x fa-facebook"></i></a>
+                <a href="https://twitter.com/Sourav21debnath" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa-brands fa-2x fa-x-twitter"></i></a>
+                <a href="https://github.com/SouravDn-p" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-2x fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sourav-debnath-5b43902b7/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-2x fa-linkedin"></i></a>
             </div>
-            <div><h5>© 2024 Sourav Debnath. All my-rights reserved.</h5></div>
+            <div><h5>© <span id="year">2026</span> Sourav Debnath. All rights reserved.</h5></div>
         </footer>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/113a085664.js" crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        const sections = ["home", "about", "blog", "project", "contact"]
+            .map((id) => document.getElementById(id))
+            .filter(Boolean);
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        const navToggleTargets = document.querySelectorAll(".navbar-nav .nav-link, .nav-cta");
+
+        navToggleTargets.forEach((link) => {
+            link.addEventListener("click", () => {
+                const collapse = document.getElementById("navbarSupportedContent");
+                if (collapse.classList.contains("show") && window.bootstrap) {
+                    window.bootstrap.Collapse.getOrCreateInstance(collapse).hide();
+                }
+            });
+        });
+
+        if ("IntersectionObserver" in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (!entry.isIntersecting) return;
+                    navLinks.forEach((link) => {
+                        const current = link.getAttribute("href") === `#${entry.target.id}`;
+                        link.classList.toggle("active", current);
+                        if (current) link.setAttribute("aria-current", "page");
+                        else link.removeAttribute("aria-current");
+                    });
+                });
+            }, { rootMargin: "-45% 0px -45% 0px" });
+            sections.forEach((section) => observer.observe(section));
+        }
+
+        const contactForm = document.getElementById("contact-form");
+        const formStatus = document.getElementById("form-status");
+        contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const name = contactForm.name.value.trim();
+            const email = contactForm.email.value.trim();
+            const message = contactForm.message.value.trim();
+            const subjectText = contactForm.subject.value.trim() || `Message from ${name}`;
+            if (!name || !email || !message || !contactForm.email.checkValidity()) {
+                formStatus.textContent = "Please add your name, a valid email, and a message.";
+                return;
+            }
+            const subject = encodeURIComponent(subjectText);
+            const body = encodeURIComponent(`${message}\n\n— ${name}\n${email}`);
+            window.location.href = `mailto:sdsouravdebnath26@gmail.com?subject=${subject}&body=${body}`;
+            formStatus.textContent = "Your email app should open with this message ready to send.";
+        });
+    </script>
       
 </body>
 </html>
